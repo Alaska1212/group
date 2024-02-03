@@ -3,3 +3,9 @@ def f(n):
         return 1
     else:
         return n * f(n - 1)
+def kvadrat(file): #b
+    counter = 0
+    for n in file:
+        if float(n) == (int(float(n)**0.5))**2 and float(n) % 2 != 0:
+            counter += 1
+    return counter
